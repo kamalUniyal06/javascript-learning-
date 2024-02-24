@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Functions are the block of code which invoked whenever needed.
+    //ex- console.log(), .toUpperCase()  here .log() is a function invocation as it do the same work whenever needed
+    //if in a program some piece of code is repeating in your program you can create function of that repeating code
+    //its safe as from redendency repetition of code
+    function myFunction()                                          //This is function defination
+    {
+        console.log("This is a function");
+        console.log("I have created it");
+    }
+    myFunction();                                                    //This is function calling or invocation
+
+    //Lets create a program of adding 2 numbers;
+    function calculate(num1,num2)                                 //Here num1 and num2 is parameter and these are local variables and they have block scope
+    {
+        let sum = num1+num2;
+        return sum;
+        console.log("After return");                                //This statement will never execute
+    }
+    let n1 = 5;
+    let n2 = 6;
+    let result = console.log(calculate(n1,n2));                    //here n1,n2 is argument
+
+    //Arrow functions -> Compact way of writing a function
+       
+    const arrowMul = (a,b)=>{
+        return a*b;
+    }
+    console.log(arrowMul(2,5));
+    console.log(arrowMul);                                  //it will give value store in the function variable
+
+    //we can use arrow function without parameters
+    const arrowNun =()=>{
+        console.log("Nothing");
+    }
+    arrowNun();
+
+</script>
+</html>

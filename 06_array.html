@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Array is ac collection of similar kind of data
+    //Here is data is collected into liner form and can excess through indexing of the array elements
+
+    let marks = [90,78,67,56,45];
+    console.log(marks);
+    console.log(`Length of array is ${marks.length}`);
+
+    let friends = ["Deepu", "Vikas", "Piyush", "Gaurav"];
+    console.log (friends);
+    console.log(`Length of array is ${friends.length}`);
+    console.log(typeof friends);  //as array is nothing but a object which have index as key value
+
+    //array index values can be changed
+    friends[3] = "Ashish";  //unlike strings arrays are muitable as we can change at paticular index
+    console.log(friends);
+
+    //Loops in array
+    let friends1 = ["Deepu", "Vikas", "Piyush", "Gaurav", "Ashish"];
+    // for(let i =0 ; i<friends1.length; i++)
+    // {
+    //     console.log(friends1[i]);
+    // }
+
+    //use for of loop
+    // for(let i of friends1)
+    // {
+    //     console.log(i);
+    // }
+
+    //for in loop
+    for(let i in friends1)
+    {
+        console.log(friends1[i].toUpperCase());
+    }
+</script>
+</html>

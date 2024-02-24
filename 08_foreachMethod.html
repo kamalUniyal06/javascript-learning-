@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //forEach Loop in array when a function is bind with a data structure it is called method and here the data structure is array
+    //We generally use callback function in forEach loop 
+    //CALLBACK FUNCTIONS -> When a function passed as an arrgument to another function
+    // ex->
+    // function abc(){
+    //     console.log("Hello");
+    // }
+    // function myFun(abc){
+    //     return abc;
+    // }
+    // ex2->
+    // let arr2 = [1,2,3,4,5];
+    // arr2.forEach((val)=>{
+    //     console.log(val);
+    // })
+    //here in callback function we can use three parameters like value,index,array
+    let arr1 = ["Kamal","Amit","amrit","kullu"];
+    arr1.forEach((val,idx,arr1)=>{
+        console.log(val.toUpperCase(),idx,arr1);
+    })
+    
+</script>
+</html>

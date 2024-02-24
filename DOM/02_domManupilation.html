@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">       <!-- Can be same for multiple tags-->
+             <h1>I am a class container</h1>
+             <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div id="container">          <!-- Cannot be same for multiple tags-->
+        <h1>I am a ID container</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+<script>
+     let classDemo = document.getElementsByClassName("container");
+     console.dir(classDemo);
+     let idDemo = document.getElementById("container");
+     console.dir(idDemo);
+
+     let tagDemo = document.getElementsByTagName("h1");
+     console.dir(tagDemo);
+
+     let querySelectorDemo = document.querySelector("p");   //It will return the first p of the document
+     console.dir(querySelectorDemo);
+
+     let querySelectorAllDemo = document.querySelectorAll("p");   //It will return the entire p of the document
+     console.dir(querySelectorAllDemo);  
+     
+     //Excessing class through querrySelector
+     let querySelectorAllClassDemo = document.querySelectorAll(".container");   //It will return the entire p of the document
+     console.dir(querySelectorAllClassDemo); 
+
+     //Excessing ID through querrySelector
+     let querySelectorIdDemo = document.querySelector("#container");   //It will return the entire p of the document
+     console.dir(querySelectorIdDemo);
+
+ 
+
+     //
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Q1; makrs greater than 90
+    let marks = [100,45,105,34,90,89,91]
+    let student = marks.filter((val)=>{
+        return val >90
+    })
+    console.log(student);
+
+    //Q2
+    let n = prompt("Enter the value of n");
+    let arr = [];
+    for(let i=1; i<=n; i++){
+        arr.push(i);
+    }
+    let newArray = arr.reduce((result,curr)=>{
+        return result+curr;
+    });
+    console.log(newArray);
+    let newArray1 = arr.reduce((result,curr)=>{
+        return result*curr;
+    });
+    console.log(newArray1);
+
+    
+   
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <button class="click">Click Me</button>
+</body>
+<script>
+    //benifit of eventlistener is we can assign mutiple event Listner to same element
+    //add eventListener
+   let btn1 = document.querySelector("button");
+   btn1.addEventListener("click",(evt)=>{
+    console.log("Button is clicked");
+    console.log(evt.target);
+    console.log(evt.type);
+   });
+   let handler2 = ()=>{
+    console.log("Button is clicked handler2");
+   }
+   btn1.addEventListener("click",handler2);
+
+   //remove eventListener
+   btn1.removeEventListener("click",handler2);
+</script>
+</html>

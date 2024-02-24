@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <div class="container">
+    <h1>kamal</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <img src="" alt="">
+     </div>
+</body>
+<script>
+    //Window object represents an open window in a browser,its browser object not javascript it is a global object which lots of properties and methods
+     console.log("hii");
+     window.console.log("hii")     //both are same and its not needed to use window keyword everytime as it is a global keyword of browser
+
+     //DOM -> When a web page is loaded, the browser creates a Document Object Model(DOM) of the page
+     let a = window.document;
+     console.dir(a);        //.dir prints object
+     console.dir(document.body.childNodes[1]);   //it will acess the div tag of our HTML element
+     document.body.style.background = "red";    //it will turn the background red
+    //So basically DOM is used to dynamically change/manipulate the web page
+     
+     //Script tag should always add just before ending the body ,if you wo'nt do that it will generate some issues
+
+
+   
+      
+
+</script>
+</html>

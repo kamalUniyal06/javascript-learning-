@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myClass{
+            text-align: center;
+            font-size: 1.4rem;
+            background-color: red;
+            color: black;
+            border: 4px solid green;
+        }
+        .new
+        {
+            background-color: blue;
+        }
+       
+    </style>
+</head>
+<body>
+    <p class="myClass">MY PARA</p>
+</body>
+<script>
+    //  let newClass = document.createElement("new");
+    //  let para = document.querySelector("p");
+    //  para.append(newClass);
+    // let newClass = document.createElement("new");
+
+    //using setAttributes
+    // let para  = document.querySelector("p");
+    // para.setAttribute("class","new");
+
+    //using classList
+     let para = document.querySelector("p");
+     let addClass = para.classList.add("new");
+     let remoClass = para.classList.remove("new");
+    
+</script>
+</html>

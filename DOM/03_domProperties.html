@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hii</h1>
+    <div>
+        <h3 style="visibility:hidden">Fruits</h3>
+        <ul>
+            <li>mango</li>
+            <li>orange</li>
+            <li>litchi</li>
+            <li>banana</li>
+        </ul>
+    </div>
+</body>
+<script>
+        //Dom properties
+     //we can get and set the values with this properties
+     //1.tagName
+     let tagFind = document.querySelector("h1")
+     console.log(tagFind.tagName);
+
+     //2.innerText-> rturn text content and all its childern
+     let selectDiv = document.querySelector("div");
+     console.dir(selectDiv.innerText);
+
+     //3.innerHTML -> here not only content but tags will also return
+     console.dir(selectDiv.innerHTML);
+
+     //difference b/w innerText and innerHTML
+    //  console.log(selectDiv.innerHTML="<p>It's added through innerHTML property </p>")
+
+    //  console.log(selectDiv.innerText = "<p>It's added through innerHTML property </p>");
+
+     //textContent -> it will show the content of hidden elements;
+
+    let hiddenFind = document.querySelector("h3");
+    console.log(hiddenFind.innerText);
+    console.log(hiddenFind.textContent);
+
+     
+</script>
+</html>

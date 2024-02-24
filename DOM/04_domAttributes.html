@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="box">This is a div</div>
+    <p class="para">This is simple line</p>
+</body>
+<script>
+    //attributes-> getAttributes(attr) {to get attribute value}
+    //setAttribute(attr,value)  {To set attribute value}
+     let get = document.querySelector("div").getAttribute("id");
+     console.log(get);
+     let set = document.querySelector("div").setAttribute("id","box1");
+     console.log(set);
+
+     //style attribute _> .style
+     document.getElementById("box1").style.backgroundColor = "red";
+     document.getElementById("box1").style.textAlign = "center";
+     document.getElementById("box1").style.fontSize = "2.2rem";
+     document.getElementById("box1").style.border = "10px solid black";
+</script>
+</html>

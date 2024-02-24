@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Q1:Average of the array
+    // let marks = [85,97,44,37,76,60];
+    // let len = marks.length;
+    // let sum =0;
+    // // for(let i of marks)
+    // // {
+    // //     sum+=i;
+    // // }
+    // for(let i in marks)
+    // {
+    //     sum+=marks[i];
+    // }
+    // let avg = sum/len;
+    // console.log(`The average marks will be ${avg}`);
+
+    //Q2: apply discount of 10% and store value in new array 
+    let itemPrice = [250,645,300,900,50];
+    let itemNewPrice = [];
+    for(let i of itemPrice)
+    {
+           let dis = 0.1*i;
+           let newPrice = i-dis;
+           itemNewPrice.push(newPrice);
+    }
+    console.log(itemNewPrice);
+    for(let i of itemNewPrice)
+    {
+        console.log(`Discounted prices are ${i}`);
+    }
+
+    //Methods in array 
+    //generally we hava push()->adding element at the end 
+
+    let friends = ["Kamal", "Amit", "Amrit", "Amit","Deepu"];
+    let add = friends.push("Vikas","piyush","Gaurav");
+    console.log(friends);
+
+    //pop()-> it generally delete the item from the end and return it
+    // console.log(friends.pop());
+    let deleted = friends.pop();
+    console.log(`Deleted ${deleted}`);
+
+    //toSring is also a method
+    console.log(friends.toString());
+
+    //concat()-> it join mutiple arrays and returns ressult
+    let marvelHero = ["IronMan", "thor", "Spiderman"]
+    let dcHeros = ["Batman","superman"];
+    let indianHeros = ["Shaktiman","Krissh"]
+    let heroes = marvelHero.concat(dcHeros,indianHeros);
+    console.log(heroes)
+
+    //unshift()-> it will add element to start
+    let heroes1 = marvelHero.unshift("CaptionAmerica");
+    console.log(marvelHero);
+
+    //shift()->to remove the element from start
+    let heroes2 = marvelHero.shift();
+    console.log(heroes2);
+    console.log(marvelHero);
+
+    //slice()-> it will give us a slice and it will not  hamper original array
+    let heroes3 = heroes.slice(5,7);
+    console.log(heroes3);
+
+    //splice()->change original array (add,remove,replace)
+    console.log(heroes);
+    // let heroes4 = heroes.splice(2,3,101,104);
+    let heroes4 = heroes.splice(2,0,101,104);
+    console.log(heroes4);
+    console.log(heroes);
+
+    // let heroes4 = heroes.splice(4);
+    // console.log(heroes4);
+
+
+</script>
+</html>

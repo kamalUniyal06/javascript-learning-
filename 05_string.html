@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // let a = "KamalUniyal";
+    // let b = 'KamalUniyal';
+    // console.log(a.length);
+    // console.log(a[0]);
+    // console.log(b);
+
+    // With for of loop
+    // count= 0;
+    // for(let i of a)
+    // {
+    //     count++;
+    // }
+    // console.log(count);
+
+    //Template literals ,when we apply string using `` these are the special strings
+    // let specialString = `This is a Special string`;
+    // console.log(specialString);
+
+    //let's see show why use template literal so the reason is in the below example
+
+    const student = {
+      name: "kamal",
+      age: 22,
+    };
+    console.log(
+      "The name of student is",
+      student["name"],
+      "his age is",
+      student.age
+    ); //this line is complicated
+
+    /* let's use template literals now and see it will become so simple, so template literals are
+       a way to have embedded expressions in strings and the process is called string interpolation
+       as there in below example */
+    console.log(
+      `The name of student is ${student["name"]} and his age is ${student.age}`
+    );
+    // we can perform calculation inside the placeholder 
+    console.log(`The sum is ${1+3+5}`);
+
+    //escape varible \n can be use to write string in next line or the tab escape \t
+   let b = "kamal\tuniyal"
+   console.log(b.length);
+
+   //String methods in JS ,methods are used to manipulate the string
+   //.toUpperCase()   .toLowerCase()   .trim()  .slice(start,end)   .concat(str2) .replace(oldV,newV)  .charAt(index)
+
+   let str = "kamalUniyal";
+//    str.toUpperCase();
+  // console.log(str);  //it will not change any thing as strings are immutable you cannot change the string , you can create a copy of your string to change like
+   let out = str.toUpperCase();
+   let out1 = str.toLowerCase();
+   console.log(out);
+   console.log(out1);
+
+   //Now the trim metod can remove the spaces in starting and end example:
+   let m ="   kamal uniyal  "
+   let out3 = m.trim();
+   console.log(out3);
+
+   //slice method
+   let p = "kamal uniyal";
+   console.log(`the trim value is ${p.slice(0,5)}`);
+
+   // concat methos
+   let q = " is a good boy"
+   console.log(`${p.concat(q)}`);  
+   //or you can do inspite using concat
+   console.log(`${p+q}`);
+
+   //Replace method
+   let val = "baat";
+   console.log(`${val.replace("b","p")}`);
+   //or
+   console.log(`${val.replaceAll("at","p")}`);
+
+
+   //charAt(index)
+   console.log(val.charAt(2));
+   
+  </script>
+</html>

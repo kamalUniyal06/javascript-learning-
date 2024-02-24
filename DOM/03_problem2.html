@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+<script>
+   let elementSelect = document.querySelectorAll(".box");
+//    for(let i =0; i<=elementSelect.length; i++)
+//    {
+//         if(i==0)
+//         {
+//         elementSelect[i].innerHTML ="First";
+//         }
+//         else if(i==1)
+//         {
+//         elementSelect[i].innerHTML ="Second";
+//         }
+//         else if(i==2)
+//         elementSelect[i].innerHTML ="Third";
+//    }
+
+//    elementSelect[0].innerHTML="<h1>First</h1>";
+//    elementSelect[1].innerHTML="<h1>Second</h1>";
+//    elementSelect[2].innerHTML="<h1>Third</h1>";
+
+//Most efficent way
+let arr = ["First","Second","Third"];
+
+for(i in elementSelect)
+{
+    elementSelect[i].innerHTML = arr[i];
+}
+</script>
+</html>

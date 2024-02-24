@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Here forEach is use to perform some calculation where map perform the calculation and return the value of function to create new array
+    // let arr = [2,3,4,5];
+    // arr.forEach((val)=>{
+    //     console.log(val*val);
+    // })
+
+    //OR
+    // let calSquare =(num)=>{
+    //     console.log(num*num);
+    // }
+    // let ans =arr.forEach(calSquare);
+
+    //MAP method for an array it is used to strore the value of function in new array
+//     let arr2 = [2,6,4,5];
+//    let newArray = arr2.map((num1)=>{
+//         return num1*num1;
+//     })
+//     console.log(newArray);
+//     console.log(arr2);
+    
+    //Filter method is used to filter OUT THE ARRAY BASED ON some constions it can store these values in new array
+
+    //Lets filter even values from array
+    let arr3 = [1,2,3,4,5,6,7,8,9];
+    let newArray1 = arr3.filter((val)=>{
+          return val%2==0;
+        //   return val%2!=0          //give even number
+        //   return val>5;            //give value greater than 5
+    })
+    console.log(newArray1);
+
+    //reduce method in array-> it is used to perform some operations and reduce  the array to single value
+    //ex- sum of an array through reduce method
+    // let nums = [1,2,3,4];
+    // let output = nums.reduce((result,currentVal)=>{
+    //     return result+currentVal;
+    // });
+    // console.log(output);
+
+      //ex- largest number of an array through reduce method
+      let nums1 = [1,2,105,3,4];
+    let output1 = nums1.reduce((result,currentVal)=>{
+        return result>currentVal ? result : currentVal;
+      //  return result<currentVal ? result : currentVal;      //it will give smallest num
+    });
+    console.log(output1);
+    
+    
+</script>
+</html>
